@@ -14,7 +14,7 @@ ENV SIAB_USERCSS="Normal:+/etc/shellinabox/options-enabled/00+Black-on-White.css
     SIAB_PKGS=none \
     SIAB_SCRIPT=none
 
-RUN apt-get update && apt-get install -y openssl curl openssh-client sudo shellinabox sed tr cut grep uniq coreutils curl \
+RUN apt-get update && apt-get install -y openssl curl openssh-client sudo shellinabox sed grep coreutils curl \
     wget man-db findutils nano vim fzf gzip util-linux gawk lolcat tmux && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
