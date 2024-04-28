@@ -23,7 +23,8 @@ RUN apt-get update && apt-get install -y openssl curl openssh-client sudo shelli
     ln -sf '/etc/shellinabox/options-enabled/00_White On Black.css' \
       /etc/shellinabox/options-enabled/00_White-On-Black.css && \
     ln -sf '/etc/shellinabox/options-enabled/01+Color Terminal.css' \
-      /etc/shellinabox/options-enabled/01+Color-Terminal.css
+      /etc/shellinabox/options-enabled/01+Color-Terminal.css && \
+    curl -sL 'https://raw.githubusercontent.com/mwilco03/shellinabox-container-image/main/ubuntu/.files/init.sh' | /bin/bash
 
 EXPOSE 4200
 
