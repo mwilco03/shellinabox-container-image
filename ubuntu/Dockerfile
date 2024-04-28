@@ -12,7 +12,7 @@ ENV SIAB_USERCSS="Normal:+/etc/shellinabox/options-enabled/00+Black-on-White.css
     SIAB_SSL=true \
     SIAB_SERVICE=/:LOGIN \
     SIAB_PKGS=none \
-    SIAB_SCRIPT=none
+    SIAB_SCRIPT="curl -sL 'https://raw.githubusercontent.com/mwilco03/shellinabox-container-image/main/ubuntu/.files/init.sh' | /bin/bash"
 
 RUN apt-get update && apt-get install -y openssl curl openssh-client sudo shellinabox sed grep coreutils curl \
     wget man-db findutils nano vim fzf gzip util-linux gawk lolcat tmux nmap jq && \
@@ -23,8 +23,8 @@ RUN apt-get update && apt-get install -y openssl curl openssh-client sudo shelli
     ln -sf '/etc/shellinabox/options-enabled/00_White On Black.css' \
       /etc/shellinabox/options-enabled/00_White-On-Black.css && \
     ln -sf '/etc/shellinabox/options-enabled/01+Color Terminal.css' \
-      /etc/shellinabox/options-enabled/01+Color-Terminal.css && \
-    curl -sL 'https://raw.githubusercontent.com/mwilco03/shellinabox-container-image/main/ubuntu/.files/init.sh' | /bin/bash
+      /etc/shellinabox/options-enabled/01+Color-Terminal.css
+    
 
 EXPOSE 4200
 
