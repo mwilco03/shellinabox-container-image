@@ -12,7 +12,7 @@ ENV SIAB_USERCSS="Normal:+/etc/shellinabox/options-enabled/00+Black-on-White.css
     SIAB_SSL=false \
     SIAB_SERVICE=/:LOGIN \
     SIAB_PKGS=none \
-    SIAB_SCRIPT="curl -sL 'https://raw.githubusercontent.com/mwilco03/shellinabox-container-image/main/ubuntu/.files/init.sh' | /bin/bash"
+    SIAB_SCRIPT="https://raw.githubusercontent.com/mwilco03/shellinabox-container-image/main/ubuntu/.files/init.sh"
 
 RUN apt-get update && apt-get install -y openssl curl openssh-client sudo shellinabox sed grep coreutils curl \
     wget man-db findutils nano vim fzf gzip util-linux gawk lolcat tmux nmap jq && \
