@@ -1,0 +1,11 @@
+col1		col2                                                                                                                                                            
+apple		apple                                                                                                                                                           
+banana  apple                                                                                                                                                           
+apple		tangerine                                                                                                                                                       
+cherry	cherry                                                                                                                                                          
+banana  banana                                                                                                                                                          
+date		orange                                                                                                                                                          
+cherry	grape                                                                                                                                                           
+fig			star                                                                                                                                                            
+grape   cherry                                                                                                                                                          
+apple		apple  
