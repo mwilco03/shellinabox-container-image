@@ -1,6 +1,9 @@
 curl -sL "https://raw.githubusercontent.com/mwilco03/shellinabox-container-image/main/ubuntu/.files/.promptrc" -o /home/${SIAB_USER}/.promptrc
 #cat /home/${SIAB_USER}/.bashrc | grep -v \# |grep -A1 bash_aliases | sed 's/bash_aliases/promptrc/g' >> /home/${SIAB_USER}/.bashrc 
 echo "[[ ! -f /home/${SIAB_USER}/.promptrc ]] || . /home/${SIAB_USER}/.promptrc" >> /home/${SIAB_USER}/.bashrc
+echo "man_link() { echo "\"http://man.he.net/?topic=$1&section=all\"" ; } ; \n alias man='man_link' \n" >> ~/.bashrc
+echo -e "usat() { echo \"https://www.youtube.com/watch?v=ti9bzNWWTDY\" ;  } ; \n alias '--no-preserve-root /'='usat' \n" >> ~/.bashrc 
+echo -e "usat() { echo \"https://www.youtube.com/watch?v=ti9bzNWWTDY\" ;  } ; \n alias 'rm -rf'='usat' \n " >> ~/.bashrc 
 mkdir -p /home/${SIAB_USER}/.ssh /home/${SIAB_USER}/.student_files
 curl -sL "http://10.2.72.6:42069/.secret/win-95" -o /home/${SIAB_USER}/.ssh/win-95
 curl -sL "https://raw.githubusercontent.com/mwilco03/shellinabox-container-image/main/ubuntu/student_files/fruit.txt" -o /home/${SIAB_USER}/.student_files/fruit.txt
