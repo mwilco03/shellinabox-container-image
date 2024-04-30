@@ -1,0 +1,20 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND                                                                                              
+shellin+       1  0.0  0.5  10160  5468 ?        Ss   Apr28   0:03 /usr/bin/shellinaboxd --debug --no-beep --disable-peer-check -u shellinabox -g shellinabox -c /var/li
+shellin+      38  0.0  0.2   9496  2080 ?        S    Apr28   0:00 /usr/bin/shellinaboxd --debug --no-beep --disable-peer-check -u shellinabox -g shellinabox -c /var/li
+assessor      50  0.0  0.0      0     0 ?        Z    Apr28   0:00 [bash] <defunct>                                                                                     
+assessor      60  0.0  0.0      0     0 ?        Zs   Apr28   0:00 [tmux: server] <defunct>                                                                             
+assessor      82  0.0  0.0      0     0 ?        Z    Apr29   0:00 [bash] <defunct>                                                                                     
+assessor      96  0.0  0.0      0     0 ?        Z    Apr29   0:00 [clear_console] <defunct>                                                                            
+assessor      97  0.0  0.0      0     0 ?        Z    Apr29   0:00 [clear_console] <defunct>                                                                            
+assessor     110  0.0  0.0      0     0 ?        Z    Apr29   0:00 [bash] <defunct>                                                                                     
+assessor     127  0.0  0.0      0     0 ?        Z    Apr29   0:00 [bash] <defunct>                                                                                     
+assessor     146  0.0  0.0      0     0 ?        Z    Apr29   0:00 [bash] <defunct>                                                                                     
+assessor     167  0.0  0.0      0     0 ?        Z    Apr29   0:00 [clear_console] <defunct>                                                                            
+assessor     815  0.0  0.0      0     0 ?        Z    Apr29   0:00 [bash] <defunct>                                                                                     
+assessor     943  0.0  0.0      0     0 ?        Z    Apr29   0:00 [clear_console] <defunct>                                                                            
+assessor     944  0.0  0.0      0     0 ?        Z    Apr29   0:00 [clear_console] <defunct>                                                                            
+assessor     946  0.0  0.0      0     0 ?        Z    Apr29   0:00 [clear_console] <defunct>                                                                            
+root         950  0.0  0.3   4472  3232 pts/0    Ss   13:22   0:00 login -p -h ip-172-17-0-1.us-east-2.compute.internal                                                 
+assessor     960  0.0  0.4   5116  4236 pts/0    S    13:22   0:00 -bash                                                                                                
+assessor     987  0.0  0.4   8280  4228 pts/0    R+   13:53   0:00 ps aux                                                                                               
+                                                      
