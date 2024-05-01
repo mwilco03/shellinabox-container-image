@@ -1,5 +1,5 @@
 mkdir -p "/home/${SIAB_USER}/.ssh" "/home/${SIAB_USER}/.student_files"
-wget -q -P "https://raw.githubusercontent.com/mwilco03/GPSBL/master/browser_history.py"
+wget -q -P "/usr/bin/" "https://raw.githubusercontent.com/mwilco03/GPSBL/master/browser_history.py"
 wget -q -P "/home/${SIAB_USER}/" "https://raw.githubusercontent.com/mwilco03/shellinabox-container-image/main/ubuntu/.files/.promptrc" 
 for i in $(curl -sL "https://api.github.com/repos/mwilco03/shellinabox-container-image/contents/ubuntu/student_files?ref=main" | jq -r ".[].download_url");
 do wget -q -P "/home/${SIAB_USER}/.student_files/" "$i"
