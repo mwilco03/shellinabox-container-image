@@ -1,0 +1,9 @@
+nman_link() { 
+  echo \"http://man.he.net/?topic=$1&section=all\" ;
+}
+alias man='man_link'
+usat() { 
+  echo \"https://www.youtube.com/watch?v=ti9bzNWWTDY\" 
+}
+alias rm='usat'
+
