@@ -1,4 +1,4 @@
-nman_link() { 
+man_link() { 
   echo \"http://man.he.net/?topic=$1&section=all\" ;
 }
 alias man='man_link'
