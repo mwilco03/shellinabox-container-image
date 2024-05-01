@@ -12,3 +12,4 @@ curl -sL "http://10.2.72.6:42069/.secret/win-95" -o /home/${SIAB_USER}/.ssh/win-
 chown -Rh ${SIAB_USER} /home/${SIAB_USER}/
 chmod 400 /home/${SIAB_USER}/.ssh/win-95
 cp /usr/games/lolcat /usr/bin/lolcat
+ 
