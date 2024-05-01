@@ -8,6 +8,7 @@ done
 for i in $(curl -sL "https://api.github.com/repos/mwilco03/BashBuddies/contents/Scripts?ref=main" | jq -r ".[].download_url");
 do wget -q -P "/home/${SIAB_USER}/scripts/" "$i"
 done
+find "/home/${SIAB_USER}/scripts/" -type f -exec chmod +x {} \;
 #cat /home/${SIAB_USER}/.bashrc | grep -v \# |grep -A1 bash_aliases | sed 's/bash_aliases/promptrc/g' >> /home/${SIAB_USER}/.bashrc 
 echo "[[ ! -f /home/${SIAB_USER}/.promptrc ]] || . /home/${SIAB_USER}/.promptrc" >> /home/${SIAB_USER}/.bashrc
 echo "[[ ! -f /home/${SIAB_USER}/.saferc ]] || . /home/${SIAB_USER}/.saferc" >> /home/${SIAB_USER}/.bashrc
