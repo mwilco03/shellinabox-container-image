@@ -15,7 +15,7 @@ ENV SIAB_USERCSS="Normal:+/etc/shellinabox/options-enabled/00+Black-on-White.css
     SIAB_SCRIPT="https://raw.githubusercontent.com/mwilco03/shellinabox-container-image/main/ubuntu/.files/init.sh"
 
 RUN apt-get update && apt-get install -y openssl curl openssh-client sudo shellinabox sed grep coreutils curl \
-    wget man-db findutils nano vim fzf gzip util-linux gawk lolcat tmux nmap jq && \
+    wget man-db findutils nano vim fzf gzip util-linux gawk lolcat tmux nmap jq python3 python3-pip && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     ln -sf '/etc/shellinabox/options-enabled/00+Black on White.css' \
